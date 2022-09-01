@@ -1,0 +1,20 @@
+.page {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 94vh;
+    overflow-y: auto;
+
+}
+
+.darkContainer, .darkContainer * {
+ background-color: rgb(26, 37, 20);
+ color: white;
+
+}
+
+.lightContainer, .lightContainer * {
+    background-color: rgb(241, 241, 241);
+    color: black;
+
+}

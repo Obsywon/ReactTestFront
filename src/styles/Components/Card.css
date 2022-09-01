@@ -1,0 +1,33 @@
+.card {
+    border-radius: 15px;
+    padding: 2em;
+    box-shadow: 3px 3px 8px rgb(39, 131, 161);
+    transition: 200ms;
+    max-width: 75%;
+}
+
+
+
+.card:hover {
+    box-shadow: 3px 3px 10px rgb(39, 131, 161);
+
+}
+.card.lightContainer {
+    background-color: white;
+}
+
+.card.lightContainer p, .card.lightContainer h3 {
+    background-color: white;
+    color: black;
+}
+
+
+.card.darkContainer {
+    background-color: black;
+}
+
+.card.darkContainer p, .card.darkContainer h3 {
+    background-color: black;
+    color: white;
+    transition: 200ms;
+}

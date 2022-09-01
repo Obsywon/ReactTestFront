@@ -1,0 +1,121 @@
+header,
+nav {
+    z-index: 5;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: rgb(23, 23, 23);
+    margin: 0;
+
+    position: sticky;
+    position: -webkit-sticky;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    justify-content: space-between;
+    box-shadow: 0px 1px 4px rgb(0, 138, 12);
+    transition: 0.5s;
+
+}
+
+header:hover, nav:hover {
+    box-shadow: 0px 2px 10px rgb(0, 176, 15);
+
+}
+
+.menuBtn {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: inherit;
+    color: inherit;
+    background-color: inherit;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+
+.menuBtn:hover {
+    background-color: rgb(30, 99, 0);
+    width: inherit;
+
+}
+
+.menuBtn li {
+    position: relative;
+    
+}
+
+.menuBtn li a {
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+.darkContainer .menuBtn li a {
+    background-color: black;
+}
+
+.lightContainer .menuBtn li a {
+    background-color: white;
+}
+
+
+.lightContainer .menuBtn li a:hover {
+    background-color: rgb(58, 193, 0);
+}
+
+.darkContainer .menuBtn li a:hover {
+    background-color: rgb(30, 99, 0);
+}
+
+.menuBtn li ul {
+    position: absolute;
+    top: 100%;
+    right: 2%;
+    /* Permet d'éviter un overflow horizontal */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    line-height: normal;
+    background-color: rgb(30, 99, 0);
+
+}
+
+
+
+.menuBtn li ul li a {
+    text-align: left;
+    color: inherit;
+    font-size: 14px;
+    padding: 10px;
+    display: block;
+    white-space: nowrap;
+}
+
+.menuBtn li ul li a:hover {
+    background-color: rgb(30, 99, 0);
+    color: inherit;
+}
+
+
+.menuBtn li ul li ul {
+    right: 100%;
+    top: 0;
+}
+
+ul li:hover>a {
+    background-color: inherit;
+    color: inherit;
+}
+
+ul li:hover>ul {
+    display: block;
+    box-shadow: 0px 2px 10px rgb(110, 209, 90);
+    border-radius: 5px;
+}
+
+li:hover li:hover {
+    background-color: rgb(30, 99, 0);
+}

@@ -1,0 +1,115 @@
+@media (max-width: 700px) {
+    .table thead {
+        display: none;
+    }
+
+    
+    .table tr {
+        display: block;
+        margin-bottom: 10px;
+        transition: 250ms;
+    }
+
+    .table tr:hover {
+        background-color: rgba(0, 254, 0, 0.5);
+        box-shadow: 3px 3px 25px rgb(0, 247, 0, 0.2);
+    }
+
+    .table td {
+        display: block;
+        text-align: right;
+        padding: 2px 5px;
+        margin-left: 5px;
+    }
+
+    .table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+
+    .table td[data-label='Pseudo'] {
+        background-color: #005401;
+        text-align: center;
+        font-weight: 700;
+    }
+    
+
+    .darkContainer .table td:not([data-label='Pseudo']) {
+        background-color: #041b04;
+        color: #fff;
+    }
+
+    .lightContainer .table td:not([data-label='Pseudo']) {
+        background-color: rgb(255, 255, 255, 0.6);
+        color: black;
+    }
+
+    .darkContainer .table tr:nth-child(1n) td[data-label='Pseudo'] {
+        background-color: #007702;
+        color: inherit;
+    }
+
+    .lightContainer .table tr:nth-child(1n) td[data-label='Pseudo'] {
+        background-color: #00b303;
+        color: #fff;
+    }
+}
+
+
+.table td, .table th, .table tr {
+    border-radius: 0.3em;
+}
+
+.table thead {
+    position: sticky;
+    top:0;
+}
+
+
+.lightContainer .table thead th {
+    background-color: #00b303;
+    color: white;
+}
+
+.lightContainer .table td {
+    background-color: white;
+}
+
+.darkContainer .table thead th {
+    background-color: #007702;
+}
+
+.table thead tr th{
+    background-color: #007702;
+    font-size: large;
+}
+
+
+.table tr:nth-child(odd) td{
+    background-color: rgba(0, 255, 0, 0.2)
+}
+
+.darkContainer .table tr:nth-child(even) td {
+    background-color: rgb(40, 53, 36);
+}
+
+.table tr:hover td{
+    background-color: rgb(0, 255, 0, 0.4);
+}
+.table td {
+    padding: 2px 5px;
+    margin-left: 5px;
+}
+
+
+.loading {
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading p {
+    color: gray
+}

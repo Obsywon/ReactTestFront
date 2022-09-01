@@ -1,0 +1,81 @@
+.articleContainer{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    margin: 0.5em 2.5em;
+
+    border-radius: 1rem;
+    padding: 0.1rem 1.25rem;
+}
+
+.articleContainer * {
+    transition: 200ms ease-out;
+}
+
+.darkContainer .articleContainer {
+    background-color: rgb(41, 67, 45);
+}
+
+.lightContainer .articleContainer{
+    background-color: white;
+
+}
+
+.darkContainer .articleContainer:hover, .darkContainer .articleContainer:hover * {
+    color: white;
+}
+
+.lightContainer .articleContainer:hover, .lightContainer .articleContainer:hover * {
+    color: rgb(0, 0, 0);
+    
+}
+
+.lightContainer .articleContainer:hover .date {
+    color: rgb(53, 176, 53);
+    font-weight: 400;
+}
+.darkContainer .articleContainer:hover .date {
+    color: rgb(135, 163, 135);
+    font-weight: 400;
+
+}
+
+.darkContainer .articleContainer:hover {
+    box-shadow: 1em 1em 1.5em rgba(32, 161, 0, 0.1);
+
+}
+.lightContainer .articleContainer:hover{
+    box-shadow: 1em 1em 1.5em rgba(38, 188, 0, 0.241);
+
+}
+
+.darkContainer .articleContainer, .darkContainer .articleContainer *{
+    background-color: rgb(41, 67, 45);
+    color: rgba(254, 254, 254, 0.6);
+}
+
+.lightContainer .articleContainer,  .lightContainer .articleContainer *{
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.86);
+}
+
+.articleContainer h2 {
+    margin-bottom: 0.3em;
+}
+
+.date {
+    align-self: flex-end;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    font-size: small;
+}
+
+.lightContainer .date {
+    color: rgb(53, 176, 53);
+}
+.darkContainer .date {
+    color: rgb(135, 163, 135);
+}

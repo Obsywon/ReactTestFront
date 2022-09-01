@@ -1,0 +1,52 @@
+.msgContainer{
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 5px;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+.msgSentContainer{
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin: 5px;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0);
+    align-self: flex-end;
+}
+
+.msgUser{
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+
+.msgUser::after{
+    content:':';
+}
+
+.msgContent{
+    border:none;
+    background-color: cyan;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+
+.msgTime{
+    visibility: hidden;
+    color:gray;
+    font-size: small;
+    transition: 200ms;
+}
+.msgContainer:hover > .msgTime, .msgSentContainer:hover > .msgTime{
+    visibility: visible;
+}
+
+
