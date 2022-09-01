@@ -26,7 +26,7 @@ const Connexion = () => {
         setAuth(data.data);
       })
       .catch((error) => {
-        setError(error.response);
+        setError(error?.response?.data?.error);
       });
   };
 
